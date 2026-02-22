@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kehinde Razaq | Portfolio</title>
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap');
+    
+    :root {
+      --font-sans: 'Inter', system-ui, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+      --olive: #808000;
+      --black: #050505;
+      --white: #ffffff;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      background-color: var(--black);
+      color: var(--white);
+      overflow-x: hidden;
+    }
+
+    .glass {
+      background: rgba(255, 255, 255, 0.03);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .text-gradient {
+      background: linear-gradient(135deg, var(--white) 0%, var(--olive) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .shadow-glow {
+      box-shadow: 0 0 20px rgba(128, 128, 0, 0.2);
+    }
+  </style>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+  <div id="root"></div>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@19.2.3",
+    "react-dom": "https://esm.sh/react-dom@19.2.3",
+    "react-dom/client": "https://esm.sh/react-dom@19.2.3/client",
+    "framer-motion": "https://esm.sh/framer-motion@12.23.26",
+    "@tabler/icons-react": "https://esm.sh/@tabler/icons-react@3.2.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/"
+  }
+}
+</script>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
